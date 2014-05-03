@@ -1,0 +1,55 @@
+ Formulas Rendering Plugin 0.9.8:
+==================================
+
+   - Added support for arbitrary pixel accessor: red(x,y), green(x,y), blue(x,y), etc.
+   - Fixed GUI design glitches and preview rendering.
+   - Fixed minor compilation issues and warnings.
+
+
+ Formulas Rendering Plugin 0.9.7:
+==================================
+
+   - Cleaned up the whole source code.
+   - Fixed a segfault with newer versions of GdkPixbuf.
+   - Modified polar coordinates handling.
+   - Updated examples in README.
+
+
+ Formulas Rendering Plugin 0.9.6:
+==================================
+
+   - Improved and cleaned up formula parser (support for multiple arguments functions).
+   - Added new functions (min, max, rand, sign, log2, atan2).
+   - Renamed the fabs() function into abs().
+   - Renamed the r,g,b,alpha values into red,green,blue,alpha.
+   - Added the gray,r,t values (r & t stand for polar coords).
+   - The preview is now automatically updated by default.
+   - Improved the help page.
+   - Added a 'Reset' button.
+
+
+ Formulas Rendering Plugin 0.9.4:
+==================================
+
+   - Added an help file with a screenshot.
+   - Cleaned up the formula parser, now using GLib HashTable.
+   - Minor clean-ups.
+   - Fixed the name of the binary file again. Please read the README if upgrading.
+   - Rendering on Gray* layers is back, fixed the code.
+
+
+ Formulas Rendering Plugin 0.9.0:
+==================================
+
+   - Added a preview inside the plugin dialog.
+   - Fixed 2 important bugs inside the formula evaluator.
+   - Added the sinh, asinh, cosh, acosh, tanh and atanh functions.
+   - Default plugin formulas are 'r', 'g', 'b' and 'a'.
+   - Various Cleanups...
+   - Fixed the name of the binary file. Please read the README if upgrading.
+
+
+ Formulas Rendering Plugin 0.8.0:
+==================================
+
+   - Initial release.

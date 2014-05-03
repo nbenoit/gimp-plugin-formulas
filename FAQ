@@ -1,0 +1,40 @@
+	FAQ Of The Formulas Rendering Plugin release 0.9.8
+------------------------------------------------------
+
+
+* Why did you write such a useless plugin?
+ Well, it's was very challenging for me to write a maths interpretor.
+ I also really enjoy typing random formulas and see what's happening.
+
+
+* I upgraded from 0.9.0 or older and I don't see any difference?!
+ The name of the binary has changed from the 0.8.0 to the 0.9.0
+ and from the 0.9.0 to the 0.9.4... I am sorry about that.
+ Just remove the old binary:
+   rm ~/.gimp-2.0/plug-ins/gimp-plugin-formula*
+  or
+   rm /usr/lib/gimp/2.0/plug-ins/gimp-plugin-formula*
+  or 
+   rm /usr/local/lib/gimp/2.0/plug-ins/gimp-plugin-formula*
+
+
+* Can I share this plugin with my friends?
+ Yes of course! This plugin is released under the GNU-GPL License.
+ See COPYING for more details.
+
+
+* I have some ideas about improving your plugin, what should I do?
+ Well, just write an email to nbenoit@tuxfamily.org
+
+
+* I can do some translations and write some documentation...
+ Well, just write an email to nbenoit@tuxfamily.org
+
+
+* Why is the plugin so slow?
+ I suppose this comes from the code itself...
+ Sorry, I'll try to improve the speed.
+
+
+* Is this plugin compatible with the GIMP 2.2 and later ?
+ Yes it is.

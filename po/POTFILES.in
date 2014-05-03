@@ -1,0 +1,12 @@
+# POTFILES.in
+# List of source files containing translatable strings.
+
+src/interface.c
+src/main.c
+src/render.c
+src/error.c
+src/tokens_table.c
+src/formula.c
+src/maths_val.c
+src/maths_op.c
+src/maths_func.c

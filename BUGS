@@ -1,0 +1,5 @@
+Known bugs:
+-----------
+
+* With some functions, the preview is wrong ((1+sin(rad(x*y+y)))*127).
+* Alpha is not always handled properly in the preview.

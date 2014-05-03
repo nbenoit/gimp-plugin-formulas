@@ -1,0 +1,71 @@
+	Formulas Rendering Plugin release 0.9.8
+
+These are the release notes for the Formulas Rendering Plugin version 0.9.8
+Read them carefully, as they tell you what this is all about.
+
+
+WHAT IS THE FORMULAS RENDERING PLUGIN ?
+
+ This plugin has been developped for my own usage. However, I think it's
+ a funny plugin and the code might interest someone...
+ Please, don't blame me for the poor quality of the code; I try to write
+ clean and bugfree code; but sometimes, I might have stupid ideas...
+ Write me if you have any suggestion, request, critic or patch...
+
+
+HOW TO INSTALL?
+
+ Read the file INSTALL in order to get the answer of this question... ;)
+
+
+HOW TO UPGRADE?
+ If you're upgrading from 0.9.0 or older, you'll have to remove the old
+ plugin binary because the name has changed.
+ Try this:
+   rm ~/.gimp-2.?/plug-ins/gimp-plugin-formula*
+  or
+   rm /usr/lib/gimp/2.0/plug-ins/gimp-plugin-formula*
+  or 
+   rm /usr/local/lib/gimp/2.0/plug-ins/gimp-plugin-formula*
+
+
+HOW TO RUN?
+
+ Once you have compiled & installed,you should be able to run the program
+ from the GIMP Filters->Render Menu.
+ Please read the FAQ if you have any problem or suggestion.
+
+
+DON'T YOU HAVE ANY EXAMPLES?
+
+ You may try following formulas:
+
+  1)
+  Red Channel:    ((1+cos(rad(x+y)))*127)+1
+  Green Channel:  ((1+sin(rad(x+y)))*127)+1
+  Blue Channel:   y%255
+
+  2)
+  Red Channel:   sqrt((rgb(x+1,y-1)+2*rgb(x+1,y)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2+((rgb(x-1,y+1)+2*rgb(x,y+1)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2))*(255/1442.5)
+  Green Channel: sqrt((rgb(x+1,y-1)+2*rgb(x+1,y)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2+((rgb(x-1,y+1)+2*rgb(x,y+1)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2))*(255/1442.5)
+  Blue Channel:  sqrt((rgb(x+1,y-1)+2*rgb(x+1,y)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2+((rgb(x-1,y+1)+2*rgb(x,y+1)+rgb(x+1,y+1)-rgb(x-1,y-1)-2*rgb(x-1,y)-rgb(x-1,y+1))^2))*(255/1442.5)
+
+  This is the inlined formula of the Sobel edge detection filter.
+
+
+  3)
+  First Pass:
+     Red Channel:   0
+     Green Channel: (1+cos(rad(x)))*127
+     Blue Channel:  (1+cos(rad(y)))*127
+  Second Pass:
+    Red Channel:    192-((green(x,y)+blue(x,y))/3)
+    Green Channel:  green(x,y)
+    Blue Channel:   blue(x,y)
+
+  4)
+  Red Channel:      100
+  Green Channel:    (1+cos(rad(x*2.21*x/(y+1))))*92
+  Blue Channel:     (1+sin(rad(x*2.21*x/(y+1))))*127
+
+ Yeah I know... It's ugly...

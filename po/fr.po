@@ -1,0 +1,246 @@
+# translation of fr.po to French
+# This is the French locale definition for the Formula Rendering Plugin.
+# Copyright (C) 2004 Nicolas BENOIT
+# Nicolas BENOIT <nbenoit@tuxfamily.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fr\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-14 15:22+0100\n"
+"PO-Revision-Date: 2004-11-21 15:50+0100\n"
+"Last-Translator: Nicolas BENOIT <nbenoit@tuxfamily.org>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../src/interface.c:284
+msgid "Formulas Rendering Plug-In"
+msgstr "Plugin de rendu de formules"
+
+#. preview's frame
+#: ../src/interface.c:301
+msgid "Preview"
+msgstr "Aperçu"
+
+#: ../src/interface.c:318
+msgid "Unable to make the small pixbuf of the original image."
+msgstr "Impossible de faire la miniature de l'image originale."
+
+#: ../src/interface.c:324
+msgid "Unable to make the preview pixbuf."
+msgstr "Impossible de créer le pixel buffer de l'aperçu."
+
+#. automatic preview update toggle
+#: ../src/interface.c:333
+msgid "Automatic Update"
+msgstr "Mise à jour Automatique"
+
+#: ../src/interface.c:334
+msgid "Enable/Disable the automatic update of the preview"
+msgstr "Activer/Désactiver la mise à jour automatique de l'aperçu"
+
+#. preview update button
+#: ../src/interface.c:341
+msgid "Update"
+msgstr "Mise à jour"
+
+#: ../src/interface.c:342
+msgid "Update the preview"
+msgstr "Mise à jour de l'aperçu"
+
+#. formulas' frame
+#: ../src/interface.c:348
+msgid "Formulas"
+msgstr "Formules"
+
+#: ../src/interface.c:366
+msgid "Red Channel:"
+msgstr "Composante Rouge:"
+
+#: ../src/interface.c:371
+msgid "Green Channel:"
+msgstr "Composante Verte:"
+
+#: ../src/interface.c:376
+msgid "Blue Channel:"
+msgstr "Composante Bleue:"
+
+#: ../src/interface.c:383
+msgid "Gray Channel:"
+msgstr "Composante Grise:"
+
+#: ../src/interface.c:389
+msgid "Alpha Channel:"
+msgstr "Composante Alpha:"
+
+#: ../src/interface.c:398
+msgid "The formula for the red channel of the image"
+msgstr "La formule pour la composante rouge de l'image"
+
+#: ../src/interface.c:405
+msgid "The formula for the green channel of the image"
+msgstr "La formule pour la composante verte de l'image"
+
+#: ../src/interface.c:412
+msgid "The formula for the blue channel of the image"
+msgstr "La formule pour la composante bleue de l'image"
+
+#: ../src/interface.c:424
+msgid "The formula for the gray channel of the image"
+msgstr "La formule pour la composante grise de l'image"
+
+#: ../src/interface.c:433
+msgid "The formula for the alpha channel of the image"
+msgstr "La formule pour la composante alpha de l'image"
+
+#: ../src/main.c:88
+msgid "<Image>/Filters/Render/F_ormulas..."
+msgstr "<Image>/Filtres/Rendu/F_ormules..."
+
+#: ../src/render.c:228 ../src/render.c:452
+msgid "Unable to evaluate the formula of the red channel."
+msgstr "Impossible d'évaluer la formule pour la composante rouge."
+
+#: ../src/render.c:235 ../src/render.c:461
+msgid "Unable to evaluate the formula of the green channel."
+msgstr "Impossible d'évaluer la formule pour la composante verte."
+
+#: ../src/render.c:242 ../src/render.c:470
+msgid "Unable to evaluate the formula of the blue channel."
+msgstr "Impossible d'évaluer la formule pour la composante bleue."
+
+#: ../src/render.c:251 ../src/render.c:481
+msgid "Unable to evaluate the formula of the gray channel."
+msgstr "Impossible d'évaluer la formule pour la composante grise."
+
+#: ../src/render.c:261 ../src/render.c:493
+msgid "Unable to evaluate the formula of the alpha channel."
+msgstr "Impossible d'évaluer la formule pour la composante alpha."
+
+#: ../src/render.c:267
+msgid "Formulas' Rendering..."
+msgstr "Rendu des formules..."
+
+#: ../src/error.c:59
+#, c-format
+msgid "warning in %s(): %s.\n"
+msgstr "avertissement dans %s(): %s.\n"
+
+#: ../src/error.c:61
+#, c-format
+msgid "warning: %s.\n"
+msgstr "avertissement: %s.\n"
+
+#: ../src/error.c:96
+#, c-format
+msgid "error in %s(): %s.\n"
+msgstr "erreur dans %s(): %s.\n"
+
+#: ../src/error.c:98
+#, c-format
+msgid "error: %s.\n"
+msgstr "erreur: %s.\n"
+
+#: ../src/tokens_table.c:111
+msgid "unable to build the table"
+msgstr "impossible de construire la table"
+
+#: ../src/formula.c:404
+#, c-format
+msgid "function's argument '%s' evaluation has failed"
+msgstr "l'évaluation de l'argument '%s' de la fonction a échoué"
+
+#: ../src/formula.c:436 ../src/formula.c:721 ../src/formula.c:796
+#: ../src/formula.c:811
+msgid "right subtree creation failed"
+msgstr "la création du sous-arbre droit a échoué"
+
+#: ../src/formula.c:448
+msgid "internal: addition operator not found"
+msgstr "internal: impossible de trouver l'opérateur d'addition"
+
+#: ../src/formula.c:459 ../src/formula.c:697
+#, c-format
+msgid "unknown operator: '%c'"
+msgstr "opérateur inconnu: '%c'"
+
+#: ../src/formula.c:479 ../src/formula.c:497 ../src/formula.c:508
+msgid "father's right subtree creation failed"
+msgstr "la création du sous-arbre droit du père a échoué"
+
+#: ../src/formula.c:529
+#, c-format
+msgid "Analyzing \"%s\" with len=%d\n"
+msgstr "Analyse \"%s\" avec len=%d\n"
+
+#: ../src/formula.c:562
+#, c-format
+msgid "unknown constant: '%s'"
+msgstr "constante inconnue: '%s'"
+
+#: ../src/formula.c:598
+#, c-format
+msgid "unknown function: '%s)'"
+msgstr "fonction inconnue: '%s)'"
+
+#: ../src/formula.c:611
+#, c-format
+msgid "unable to build args list for function '%s)'"
+msgstr "impossible de construire la liste des arguments pour la fonction '%s)'"
+
+#: ../src/formula.c:622
+#, c-format
+msgid "function '%s)' should not have any argument"
+msgstr "la fonction '%s)' ne devrait pas avoir d'argument"
+
+#: ../src/formula.c:632
+#, c-format
+msgid "function '%s)' should have only one argument"
+msgstr "la fonction '%s)' ne devrait avoir qu'un seul argument"
+
+#: ../src/formula.c:642
+#, c-format
+msgid "function '%s)' should have only two arguments"
+msgstr "la fonction '%s)' ne devrait avoir que deux arguments"
+
+#: ../src/formula.c:652
+#, c-format
+msgid "function '%s)' should have at least one argument"
+msgstr "la fonction '%s)' devrait avoir au moins un argument"
+
+#: ../src/formula.c:671
+msgid "inside parentheses evaluation has failed"
+msgstr "l'évaluation de l'intérieur des parenthèses a échoué"
+
+#: ../src/formula.c:682 ../src/formula.c:736
+#, c-format
+msgid "got the operator '%c' without any lvalue"
+msgstr "opérateur '%c' sans opérande gauche"
+
+#: ../src/formula.c:711 ../src/formula.c:766
+msgid "left subtree creation failed"
+msgstr "la création du sous-arbre gauche a échoué"
+
+#: ../src/formula.c:750
+#, c-format
+msgid "unknown operator: '%c'.\n"
+msgstr "opérateur inconnu: '%c'.\n"
+
+#: ../src/formula.c:890
+msgid "the expression table is invalid"
+msgstr "la table d'expressions est invalide"
+
+#: ../src/formula.c:899
+msgid "the key storage is invalid"
+msgstr "le stockage de la clé est invalide"
+
+#: ../src/formula.c:909
+msgid "unable to clean the formula"
+msgstr "impossible de nettoyer la formule"
+
+#: ../src/formula.c:918
+msgid "unable to build the tree"
+msgstr "impossible de construire l'abre"

@@ -1,0 +1,17 @@
+TODO For The Formulas Rendering Plug-In 0.9.8
+---------------------------------------------
+
+-> What must be done before the 1.0 release
+Add translations (this is an official call for translations).
+Fix the bugs reported in BUGS.
+Improve precalculation of formulas.
+
+
+-> What could be done in order to clean the code
+Check the Gnu Coding Standards compliance.
+
+
+-> Various ideas:
+Add a few predefined formulas.
+Add a random formula generator.
+Add save/load formulas buttons.

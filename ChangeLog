@@ -1,0 +1,193 @@
+2010-11-14  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.9.8 release
+
+
+2010-11-14  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* *: Removed CVS RCS headers.
+	* po/de.po, po/fr.po, po/gimp20-plugin-formulas.pot: updated.
+
+
+2009-08-06  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/render.c: Fixed preview rendering and cleaned up.
+	* src/render.c, src/maths_func.c, src/tokens_table.c: Added rgb() function which returns the value of the currently processed channel. 
+	* src/interface.c: Fixed preview frame so it does not expand with the window.
+	* README, help/en/index.htm: Updated.
+	* help/en/images/interface.png: Updated the screenshot.
+	* help/en/images/interface-sobel.png: Added a screenshot with a Sobel filter.
+
+
+2009-08-05  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/formula.c, src/interface.c, src/main.h, src/tokens_table.c: Fixed warnings.
+
+
+2009-08-04  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/interface.c: Fixed formula labels so they do not expand with the window.
+	* src/main.c, src/render.c, src/maths_func.c, src/maths_val.c, src/tokens_table.c: Added support for neighbor pixels accessors, for example red(x,y)
+	* autogen.sh: Fixed for automake version >= 1.10
+
+
+2006-07-29  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.9.7 release
+
+
+2006-07-29  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/interface.c: Fixed a segfault with newer versions of GdkPixbuf.
+
+
+2005-07-19  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/*.c, src/*.h: Cleaned up everything.
+
+
+2004-11-24  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* README: Updated the formulas examples.
+	* src/render.c: Fixed polar coordinates.
+
+
+2004-11-21  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.9.6 release
+
+
+2004-11-21  Dominik SEICHTER  <domseichter@web.de>
+
+	* po/de.po: Updated the german translation.
+
+
+2004-11-21  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+	* src/main.c: Updated the version number of the source file.
+	* FAQ: Added a question about the GIMP 2.2 compatiblity.
+	* README, configure.in: Updated the version number.
+	* NEWS: Added a short description of new features available.
+	* TODO: Updated it with new tasks.
+	* help/en/index.htm: Updated help.
+	* src/formula.c: Fixed a bug with functions with two arguments.
+	* src/interface.c, src/render.c, src/main.c: Green and Gray formulas are now disassociated.
+	* src/interface.c: Added a 'Reset' button.
+	* po/fr.po: Updated french translation.
+	* help/interface.png: Updated interface screenshot.
+
+
+2004-11-20  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/formula.c, src/formula.h: Updated to the last version of my formula parser.
+	* src/tokens_table.c, src/tokens_table.h: Renamed and cleaned up from expressions.c and expressions.h.
+	* src/maths_val.c, src/maths_val.h: Those files now hold all the values related code.
+	* src/maths_func.c, src/maths_func.h: Those files now hold all the functions related code.
+	* src/maths_op.c, src/maths_op.h: Those files now hold all the operations related code.
+	* src/maths_tree.h: This file now holds the the composite structure maths_tree_t.
+	* src/render.c: Updated according to the changes made to the formula parser.
+	* src/main.c, src/interface.c: Changed default formulas according to the kind of picture we're handling.
+	* src/interface.c: Preview update is now enabled by default.
+	* autogen.sh: Updated for automake-1.9.
+	* src/Makefile.am: Added the new source files.
+	* BUGS: Added the bug with the alpha channel in the preview.
+
+
+2004-05-09  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.9.4 release
+	  Please read the README if upgrading wether you had 0.9.0 or 0.8.0
+
+
+2004-05-09  Dominik SEICHTER  <domseichter@web.de>
+
+	* po/de.po: Updated the german translation.
+
+
+2004-05-09  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* help/en/index.htm: Wrote an help page.
+	* help/en/images/interface.png: Added a 'beautiful' screenshot.
+	* src/main.c: Configured the help.
+	* src/interface.c: Removed the help dialog. Replaced it by a call to the help browser.
+	* src/main.c: Replaced strncpy() by g_strlcpy() for the non-interactive run-mode.
+	* FAQ: Updated the FAQ.
+	* README: Update The README.
+	* BUGS: Removed the reports of two crashes as it didn't happen again.
+	* TODO: Updated the TODO.
+	* po/fr.po: Updated the french translation.
+	* src/render.c: Increased the progress bar refresh interval.
+	* src/render.c: Fixed the rendering on Gray* layers.
+
+
+2004-05-08  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* help/: Created some help stuffs.
+	* src/expressions.c: Replaced M_PI and M_E by G_PI and G_E.
+	* src/expressions.c: Replaced HTABLE by GHashTable.
+	* src/formula.c: Removed the Memory Manager. We should be able to free it properly ourself.
+	* src/formula.c: Minor clean-ups.
+
+
+2004-05-07  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/main.c: Fixed the description of the plugin in the PDB.
+	* src/Makefile.am: Fixed the name of the binary (SORRY), now it's 'formulas' (READ THE README IF UPGRADING!)
+
+
+2004-05-06  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.9.0 release
+
+
+2004-05-06  Dominik SEICHTER  <domseichter@web.de>
+
+	* po/de.po: Updated the german translation.
+
+
+2004-05-06  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/interface.c: When enabling automatic update, the preview is refreshed.
+	* src/formula.c: Cleaned it up...
+	* src/render.c: x and y variables are modified according to the aspect ratio (original image / preview).
+	* src/interface.c: Added some help text for a few widgets...
+	* src/render.c: 'w' and 'h' values are now set for the preview.
+	* po/fr.po: Updated the french translation.
+	* src/Makefile.am: Fixed the name of the binary (now it's gimp-plugin-formulas) (READ THE README IF UPGRADING!)
+
+
+2004-05-05  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/main.h: Added a boolean for the automatic preview, so it is saved even if the dialog is closed.
+	* src/render.c: All the cleaning of the formulas move into destroy_formulas()
+	* src/interface.c: Added a preview.
+	* src/main.c: Changed the default values of the formulas, it's 'r', 'g', 'b' and 'a' now.
+	* src/expressions.c: Added the sinh, asinh, cosh, acosh, tanh and atanh functions.
+	* src/formula.c: Fixed some bug related to the destruction of formulas after a parsing evaluation error.
+	* src/expressions.c, src/formula.c: Fixed a bug related to the function detection.
+
+
+2004-05-04  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/main.h: Added a pointer to the drawable inside the PluginDrawableVals structure.
+	* src/render.c: Fixed a bug inside the rendering function that did not set r and b if the image was Gray*
+
+
+2004-05-03  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/main.h: Added a pointer to the drawable inside the PluginDrawableVals structure.
+	* src/main.c, render.c, interface.c: Modified the code according to the new PluginDrawableVals.
+	* src/main.c, render.c, interface.c: Renamed drawable_vals into dvals.
+	* src/interface.c: The help_dialog is now static.
+	* src/render.c: added a render_to_pixbuf function for the incoming preview.
+	
+
+2004-05-02  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* src/main.h: Added width, height and size to the PluginDrawableVals structure.
+	* src/main.c: Added a full initialization of the PluginDrawableVals structure.
+	* src/render.c: Removed the code that got width, height and size of the image.
+
+
+2004-04-30  Nicolas BENOIT  <nbenoit@tuxfamily.org>
+
+	* 0.8.0 release
